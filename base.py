@@ -3,6 +3,7 @@ import threading
 import time
 
 class Base():
+    #Base class to execute thread and poll threads
     def __init__(self, max_threads):
         self.max_threads = max_threads
         self.func_list = []
