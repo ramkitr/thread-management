@@ -19,8 +19,9 @@ def download_file(url, save_path, iteration):
 
 function_objs = Base(10)
 for i in range(100):
+    priority = i % 10
     function_objs.add_function(download_file, args=("https://link.testfile.org/PDF10MB", f""
-                                                           f"sample_{i}.mov", i))
+                                                           f"sample_{i}.mov", i), priority=priority)
 
 
 function_objs.execute()
