@@ -1,6 +1,6 @@
 Raw threading and manual management:
 
-This code implements a custom threading framework that allows multiple functions to be executed in parallel, with a limited number of threads (controlled by max_threads). 
+This code implements a custom threading framework that allows multiple functions to be executed in parallel based on thread priority, with a limited number of threads (controlled by max_threads). 
 It defines a Base class that handles the creation and execution of threads, as well as a Function class to store the function and its arguments. 
 The system attempts to execute the functions in parallel by creating and managing threads, polling them, and removing them once they are finished.
 
